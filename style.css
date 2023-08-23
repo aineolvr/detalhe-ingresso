@@ -2295,7 +2295,6 @@ tbody  td{
     padding: 20px 10px;
     width: 100%;
     float: right;
-    margin-left: 30px;
 }
 
 .input-largo{
@@ -2303,6 +2302,7 @@ tbody  td{
     height: 48px;
    margin-bottom: 15px;
    border-radius: 8px;
+   margin-left: 15px;
 }
 
 .input-menor{
@@ -2311,6 +2311,7 @@ tbody  td{
     margin-right: 10px;
     margin-bottom: 15px;
     border-radius: 8px;
+    margin-left: 15px;
 }
 
 
@@ -2323,6 +2324,7 @@ tbody  td{
    width: 300px;
    font-weight: bold;
    padding: 20px;
+   margin-left: 15px;
 }
 
 
@@ -2330,7 +2332,7 @@ tbody  td{
     color: #000000;
     font-weight: bold;
     padding: 15px;
- 
+
    
 }
 
@@ -2356,7 +2358,7 @@ tbody  td{
     display: flex;
    flex-direction: column;
    align-items: center;
-    
+    margin-left: 20px;
 }
 
 
@@ -2365,7 +2367,7 @@ tbody  td{
     display: block;
     position: relative;
     top: 10px;
-    left: -20px;
+    left: -10px;
 }
 
 
