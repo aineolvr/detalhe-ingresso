@@ -566,9 +566,9 @@ footer p {
 .pai-menu-mobile .menu-content {
     align-items: center;
     justify-content: center;
-    width: 350px;
+    width: 390px;
     height: auto;
-    margin-left: 50px;
+    margin-left: 0px;
     padding-top: 20px;
     background-color: #D9D9D9;
     padding: 20px 10px;
@@ -922,11 +922,14 @@ tbody  td{
     }
 
     .mobile-menu button{
+
         display: flex;
         justify-content: center;
         flex-direction: column;
-       padding: 10px 0;
+       padding: 10px 10px;
     }
+
+    
     
     .mobile-menu-button{
         display: block;
@@ -1650,6 +1653,8 @@ tbody  td{
       .pai-menu2{
         display: none;
       }
+
+    
   }
 
 
