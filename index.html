@@ -9,6 +9,7 @@
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>SPR-sistema</title>
     <link href="./style.css" rel="stylesheet">
@@ -466,6 +467,70 @@
     </div>
     
 
+    <div class="section-documento">
+    <div class="kit-entrega">
+        <div class="content-kit-entrega">
+          <div class="div-color-entrega"></div>
+          <div class="div-p-entrega">
+          <p class="p-entrega1">
+            
+    <svg class="svg-entrega" width="16" height="16" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 9.25C0 4.29297 4.00781 0.25 9 0.25C13.957 0.25 18 4.29297 18 9.25C18 14.2422 13.957 18.25 9 18.25C4.00781 18.25 0 14.2422 0 9.25ZM13.043 7.70312C13.4297 7.31641 13.4297 6.71875 13.043 6.33203C12.6562 5.94531 12.0586 5.94531 11.6719 6.33203L7.875 10.1289L6.29297 8.58203C5.90625 8.19531 5.30859 8.19531 4.92188 8.58203C4.53516 8.96875 4.53516 9.56641 4.92188 9.95312L7.17188 12.2031C7.55859 12.5898 8.15625 12.5898 8.54297 12.2031L13.043 7.70312Z" fill="#0C743C"/>
+    </svg>
+    
+            Kit entrega</p>
+          <p class="p-entrega2">16/02/2023 - 17:00</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="content-documento">
+        <div class="documento-left">
+        <div class="h2-button">
+        <h2 class="h2-documento">Documento</h2>
+
+        <div class="mdc-touch-target-wrapper">
+            <button id="ampliar" class="mdc-button mdc-button--touch btn-ampliar" style="color: black; background-color: #D9D9D9;  "  >
+              <span class="mdc-button__ripple"></span>
+              <span class="mdc-button__touch"></span>
+              <span class="mdc-button__label">Ampliar</span>
+            </button>
+        </div>
+    </div><!--h2-button-->
+    <div class="div-img-documento">
+        <img class="img-documento" src="https://api.credenciamentospr.com/api/files/signatures/documents/80be01db2f554127843750e88b90b99b.jpg"/>
+      </div>
+    </div><!--documento-left-->
+
+    <div class="documento-right">
+      <h2 class="h2-assinatura">Assinatura</h2>
+      <div class="div-img-documento">
+      <img class="img-assinatura" src="https://api.credenciamentospr.com/api/files/signatures/5f405a5ef41242f3b26ea57cd48943fc.jpg"/>
+      </div>
+    </div><!--documento-right-->
+
+
+  
+      </div><!--content-documento-->
+      <div class="carousel-overlay" id="carouselOverlay">
+        <div class="carousel-container">
+            <button id="fechar" class="fechar-button">
+                X
+                </button>
+            <div class="carousel-images">
+                <div class="carousel-image">
+                    <img src="https://api.credenciamentospr.com/api/files/signatures/documents/80be01db2f554127843750e88b90b99b.jpg" alt="Imagem 1">
+                </div>
+                <div class="carousel-image">
+                    <img src="https://api.credenciamentospr.com/api/files/signatures/5f405a5ef41242f3b26ea57cd48943fc.jpg" alt="Imagem 2">
+                </div>
+            </div>
+            <button id="prevButton" class="nav-button prev-button">&lt;</button>
+            <button id="nextButton" class="nav-button next-button">&gt;</button>
+        </div>
+    </div>
+
+    </div><!--section-documento-->
    
 
 
@@ -482,6 +547,47 @@
   
 <script>
 
+    
+const fecharButton = document.getElementById("fechar");
+const ampliarButton = document.getElementById("ampliar");
+const carouselOverlay = document.getElementById("carouselOverlay");
+const prevButton = document.getElementById("prevButton");
+const nextButton = document.getElementById("nextButton");
+const carouselImages = document.querySelectorAll(".carousel-image");
+let currentImageIndex = 0;
+
+fecharButton.addEventListener("click", () => {
+    carouselOverlay.style.display = "none";
+    hideAllImages();
+});
+
+ampliarButton.addEventListener("click", () => {
+    carouselOverlay.style.display = "block";
+    updateImages();
+});
+
+prevButton.addEventListener("click", () => {
+    currentImageIndex = (currentImageIndex - 1 + carouselImages.length) % carouselImages.length;
+    updateImages();
+});
+
+nextButton.addEventListener("click", () => {
+    currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
+    updateImages();
+});
+
+function updateImages() {
+    hideAllImages();
+    carouselImages[currentImageIndex].style.display = "block";
+}
+
+function hideAllImages() {
+    carouselImages.forEach(image => {
+        image.style.display = "none";
+    });
+}
+
+updateImages();
 
 const textFields = document.querySelectorAll('.mdc-text-field');
   textFields.forEach((textField) => {
