@@ -2358,7 +2358,7 @@ tbody  td{
     display: flex;
    flex-direction: column;
    align-items: center;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 
@@ -2408,6 +2408,7 @@ tbody  td{
 
  .content-documento{
     display: block;
+    margin-left: 10px;
   
   }
 }
