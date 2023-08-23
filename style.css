@@ -1968,6 +1968,233 @@ tbody  td{
     padding: 11px 20px;
 }
 
+
+.kit-entrega{
+    position: relative;
+    top:-98px;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.content-kit-entrega{
+    border-radius: 10px;
+    background-color: rgba(20,174,92,0.35);
+    width: 300px;
+    height: 90px;
+    display: flex;
+    align-items: center; 
+    
+}
+
+.div-color-entrega{
+    background-color: rgba(20,174,92,1);
+    width: 10px;
+    border-radius: 8px;
+    height: 90px;
+}
+
+
+
+.p-entrega1{
+   margin: 0;
+    padding: 5px 20px;
+    display: flex;
+    font-weight: bold;
+    
+}
+
+.svg-entrega{
+   margin-right: 5px;
+   align-items: center;
+}
+
+.p-entrega2{
+    margin: 0; 
+    padding: 5px 20px;
+}
+
+.section-documento{
+    padding: 5px;
+    display: flex;
+    position: relative;
+    top: -70px;
+    left: -20px;
+}
+
+.h2-button{
+    display: flex;
+    align-items: center;
+}
+
+.h2-documento{
+    padding: 20px 30px;
+    font-size: 21px;
+}
+
+.btn-ampliar{
+    width: 120px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+.img-documento{
+   border-radius:8px;
+    width: 400px;
+    height: 250px;
+}
+
+.content-documento{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.documento-left, .documento-right{
+    flex: 1;
+}
+
+.h2-assinatura{
+    padding: 20px 30px;
+    font-size: 21px;
+}
+
+.div-img-documento{
+    padding: 0px 5px;
+}
+
+.img-assinatura{
+    border-radius:8px;
+    width: 400px;
+    height: 250px;
+    border: 3px solid #D9D9D9;
+}
+
+ /*COMEÇANDO AQUI CARROSEL*/
+
+ 
+ .carousel-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: flex-start; /* Altera para flex-start para posicionar o botão no topo */
+    justify-content: flex-end; /* Altera para flex-end para posicionar o botão à direita */
+    padding: 20px; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+
+.fechar-button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    width: 30px;
+   height: 30px;
+   border-radius: 50px;
+    position: absolute;
+    top: 25px; 
+   right: 530px;
+   font-size: 19px;
+}
+
+.carousel-container {
+  
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    max-height: 20%;
+    margin: auto;
+    position: relative;
+}
+
+.carousel-image {  
+   position: absolute;
+    width: 45%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-image img {
+    border-radius: 8px;
+    max-width: 80%;
+    max-height: 60%;
+    object-fit: contain;
+    align-items: center;
+
+}
+
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 450px;
+}
+
+.next-button {
+    right: 450px;
+}
+
+@media (max-width: 768px) {
+    .carousel-images {
+        flex-direction: column;
+        max-height: none; 
+        align-items: center;
+    }
+
+    .carousel-image {
+        position: relative;
+        width: 100%; 
+        margin: 10px auto; 
+    }
+
+    .carousel-image img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .nav-button {
+        font-size: 20px; 
+    }
+
+    .prev-button {
+        left: 10px; 
+    }
+
+    .next-button {
+        right: 10px; 
+    }
+
+    .fechar-button {
+        right: 10px; 
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     
  .content-linha-one{
@@ -1987,7 +2214,7 @@ tbody  td{
  }
 
  .content-one-input-btn{
-    border-bottom: 1px solid #D9D9D9;
+  border: none;
     
  }
 
@@ -2130,4 +2357,52 @@ tbody  td{
 }
 
 
+.section-documento{
+    padding: 5px;
+    display: block;
+    position: relative;
+    top: 10px;
+    left: -20px;
+}
+
+
+.kit-entrega{
+    position: relative;
+    top:0px;
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+
+.img-documento{
+    border-radius:8px;
+    padding: 0px 20px;
+     width: 400px;
+     height: 250px;
+ }
+
+ .img-assinatura{
+    border-radius:8px;
+    padding: 0px 20px;
+     width: 400px;
+     height: 250px;
+ }
+
+
+
+
+ .img-assinatura{
+    margin-left: 12px;
+    padding: 0px 20px;
+    border-radius:8px;
+    width: 370px;
+    height: 250px;
+    border: 3px solid #D9D9D9;
+}
+
+ .content-documento{
+    display: block;
+  
+  }
 }
