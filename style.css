@@ -2294,6 +2294,7 @@ tbody  td{
     padding: 20px 10px;
     width: 100%;
     float: right;
+    margin-left: 30px;
 }
 
 .input-largo{
@@ -2334,6 +2335,7 @@ tbody  td{
 
 
 .links-btn{
+    margin-left: 15px;
     padding: 5px;
     display: block;
     position: relative;
