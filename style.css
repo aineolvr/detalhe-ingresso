@@ -2099,6 +2099,7 @@ tbody  td{
     top: 25px; 
    right: 530px;
    font-size: 19px;
+   cursor: pointer;
 }
 
 .carousel-container {
