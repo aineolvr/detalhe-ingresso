@@ -249,8 +249,6 @@
         </div>
     
 
-
-
         <!--COMEÇANDO CONTEUDO LINHA 1-->
 
   <div class="container-content-main">
@@ -279,13 +277,13 @@
 
 
             <div class="mdc-touch-target-wrapper">
-                <button class="mdc-button mdc-button--touch  btn-historico" style="color: black; background-color: white; border: 1px solid black; "  >
+                <button id="open-modal-btn" class="mdc-button mdc-button--touch  btn-historico" style="color: black; background-color: white; border: 1px solid black; "  >
                   <span class="mdc-button__ripple"></span>
                   <span class="mdc-button__touch"></span>
                   <span class="mdc-button__label">Històrico de transferências</span>
                 </button>
             </div>
-      
+
 
             <div class="mdc-touch-target-wrapper">
                 <button  class="mdc-button mdc-button--touch btn-convidados" style="color: white; background-color: black; border: 1px solid black; "  >
@@ -448,6 +446,10 @@
     
     
 
+
+
+
+
    
     
     <div class="links-btn">
@@ -529,23 +531,224 @@
             <button id="nextButton" class="nav-button next-button">&gt;</button>
         </div>
     </div>
-
     </div><!--section-documento-->
+
+    
+    
+
+    <!--COMEÇANDO MODAL TABLE DUPLO-->
+
+
+       
+<div class="mdc-dialog  mdc-dialog--fullscreen " id="table-duplo">
+
+    <div class="mdc-dialog__container ">
+      <div class="mdc-dialog__surface"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="my-dialog-title"
+        aria-describedby="my-dialog-content">
+        <div class="mdc-dialog__header  ">
+          <h2 class="mdc-dialog__title h2-title " id="my-dialog-title" style="font-weight: bold;">
+            Histórico de transferências
+          </h2>
+          <button class="h2-data">17/01/2023</button>
+          <button class="mdc-icon-button material-icons mdc-dialog__close mdc-dialog__close3"
+                  data-mdc-dialog-action="close">
+            close
+          </button>
+        </div>
+        
+
+    
+    
+  
+        <div class="mdc-dialog__content" id="my-dialog-content">
+
+
+           
+            
+            <div class="content-table-duplo-h2">
+                <h2 class="h2-origem">Origem</h2>
+                <h2 class="h2-destino">Destino</h2>
+            </div>
+
+           
+
+          <div class="modal-table-duplo">
+
+
+    <div class="mdc-data-table table-duplo-content1" style="border: none !important;">
+    <div class="mdc-data-table__table-container" >
+      <table class="mdc-data-table__table" aria-label="Dessert calories">
+        <thead >
+          <tr class="mdc-data-table__header-row " >
+            <th class="mdc-data-table__header-cell detail" role="columnheader" scope="col">Data</th>
+            <th class="mdc-data-table__header-cell id" role="columnheader" scope="col">Nome</th>
+            <th class="mdc-data-table__header-cell name" role="columnheader" scope="col">E-mail</th>
+            <th class="mdc-data-table__header-cell" role="columnheader" scope="col" style="font-weight: bold; font-size: 18px;">Documento</th>
+         
+           
+  
+          </tr>
+        </thead>
+  
+     
+        <tbody class="mdc-data-table__content"  >
+          
+          <tr data-row-id="u0" class="mdc-data-table__row"  >
+           
+            <th class="mdc-data-table__cell" scope="row" id="u0">17/01/2023</th>
+            <td class="mdc-data-table__cell">João Oliveira da silva</td>
+            <td class="mdc-data-table__cell">joãodasilvaoliveira@gmail.com</td>
+            <td class="mdc-data-table__cell">123.567.897-02</td>
+             
+         
+          
+          </tr>
+
+           
+          <tr data-row-id="u0" class="mdc-data-table__row"  >
+           
+            <th class="mdc-data-table__cell" scope="row" id="u0">17/01/2023</th>
+            <td class="mdc-data-table__cell">João Oliveira da silva</td>
+            <td class="mdc-data-table__cell">joãodasilvaoliveira@gmail.com</td>
+            <td class="mdc-data-table__cell">123.567.897-02</td>
+             
+         
+          
+          </tr>
+  
+        </tbody>
+  
+      </table>
    
+    </div>
+  </div>
+  
+  
+
+  <div class="meio-setas">
+    <svg class="seta1" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="26" height="26" rx="13" transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 0)" fill="#F5F5F5"/>
+    <path d="M11.375 8.9375L16.25 13L11.375 17.0625" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    <svg class="seta2" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="26" height="26" rx="13" transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 0)" fill="#F5F5F5"/>
+        <path d="M11.375 8.9375L16.25 13L11.375 17.0625" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+     </div>
+
+
+
+  <!--comçeando segunda tabela-->
+
+  <h2 class="h2-destino-off">Destino</h2>
+    
+        
+    <div class="mdc-data-table  table-duplo-content2 " style="border: none !important;">
+    <div class="mdc-data-table__table-container" >
+      <table class="mdc-data-table__table" aria-label="Dessert calories">
+        
+        <thead >
+          <tr class="mdc-data-table__header-row " >
+            <th class="mdc-data-table__header-cell detail" role="columnheader" scope="col">Nome</th>
+            <th class="mdc-data-table__header-cell id" role="columnheader" scope="col">E-mail</th>
+            <th class="mdc-data-table__header-cell name" role="columnheader" scope="col">Documento</th>
+            <th class="mdc-data-table__header-cell" role="columnheader" scope="col" style="font-weight: bold; font-size: 18px;">Administrador</th>
+            <th class="mdc-data-table__header-cell" role="columnheader" scope="col"  style="font-weight: bold; font-size: 18px;">Motivo</th>
+         
+           
+  
+          </tr>
+        </thead>
+  
+     
+        <tbody class="mdc-data-table__content"  >
+          
+          <tr data-row-id="u0" class="mdc-data-table__row"  >
+           
+            <th class="mdc-data-table__cell" scope="row" id="u0">João Oliveira da silva/th>
+            <td class="mdc-data-table__cell">joãodasilvaoliveira@gmail.com</td>
+            <td class="mdc-data-table__cell">123.567.897-02</td>
+            <td class="mdc-data-table__cell">Ariosvaldo</td>
+            <td class="mdc-data-table__cell">Não informado</td>
+            
+          
+          </tr>
+
+            
+          <tr data-row-id="u0" class="mdc-data-table__row"  >
+           
+            <th class="mdc-data-table__cell" scope="row" id="u0">João Oliveira da silva/th>
+            <td class="mdc-data-table__cell">joãodasilvaoliveira@gmail.com</td>
+            <td class="mdc-data-table__cell">123.567.897-02</td>
+            <td class="mdc-data-table__cell">Ariosvaldo</td>
+            <td class="mdc-data-table__cell">Não informado</td>
+            
+          
+          </tr>
+  
+        </tbody>
+  
+      </table>
+   
+    </div>
+  </div>
+  
+
+          
+  
+           
+  
+      
+  
+    
+  
+      
+    <div class="mdc-dialog__scrim"></div>
+  </div>
+      
+  </div>
+  </div>
+  </div>
+    
+
 
 
    
-
-
-    <footer><p> © 2023- SPR Sistemas de controle</p></footer>
-
+    <!--finalizando modal table duplo-->
+   
 </div><!--content-container-main-->
+<footer><p> © 2023- SPR Sistemas de controle</p></footer>
 </div><!--content-global-->
 
 
 
   
 <script>
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const openModalButton = document.getElementById("open-modal-btn");
+  const modal = document.getElementById("table-duplo");
+  
+  openModalButton.addEventListener("click", function () {
+    modal.classList.add("mdc-dialog--open");
+  });
+  
+  const closeModalButtons = modal.querySelectorAll(".mdc-dialog__close");
+  closeModalButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      modal.classList.remove("mdc-dialog--open");
+    });
+  });
+});
+
+
+
 
     
 const fecharButton = document.getElementById("fechar");
