@@ -2591,6 +2591,7 @@ tbody  td{
 
   
   .h2-data-off{
+    font-size:20px ;
     display: flex;
     flex-direction: column;
     position: relative;
