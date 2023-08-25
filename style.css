@@ -2476,6 +2476,7 @@ tbody  td{
    height: 40px;
    border: none;
    border-radius: 10px;
+   font-size: 20px;
  }
 
  .meio-setas{
@@ -2611,15 +2612,22 @@ tbody  td{
 
 /* COMEÇANDO MODAL CONVIDADOS*/
 
+#meu-modal4 .mdc-dialog__surface{
+    width: 60%;
+}
+
+
+
+
 .modal-convidados{
-    padding: 20px 5px 20px 152px;
+    padding: 20px 5px 20px 50px;
     border-top: 1px solid #D9D9D9;
 }
 
 
 
 .data-modal4{
-    right: -350px;
+    right: -200px;
     background-color: #D9D9D9;
     display: flex;
     position: relative;
@@ -2637,6 +2645,12 @@ tbody  td{
 
  
 @media screen and (max-width: 768px) {
+
+    
+#meu-modal4 .mdc-dialog__surface{
+    width: 100%;
+}
+
     .modal-convidados{
         display: block;
         padding: 20px 0px;
